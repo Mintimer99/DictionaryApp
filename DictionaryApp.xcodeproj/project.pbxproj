@@ -15,6 +15,7 @@
 		A10EEB6727E9C98500E473FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6527E9C98500E473FB /* LaunchScreen.storyboard */; };
 		A10EEB6F27E9C9B400E473FB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6E27E9C9B400E473FB /* .gitignore */; };
 		A10EEB7127E9CDD100E473FB /* WordTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB7027E9CDD100E473FB /* WordTVCell.swift */; };
+		A10EEB7327E9CF8700E473FB /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB7227E9CF8700E473FB /* WordModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A10EEB6827E9C98500E473FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10EEB6E27E9C9B400E473FB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A10EEB7027E9CDD100E473FB /* WordTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTVCell.swift; sourceTree = "<group>"; };
+		A10EEB7227E9CF8700E473FB /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A10EEB5A27E9C98200E473FB /* AppDelegate.swift */,
 				A10EEB5C27E9C98200E473FB /* SceneDelegate.swift */,
 				A10EEB5E27E9C98200E473FB /* ViewController.swift */,
+				A10EEB7227E9CF8700E473FB /* WordModel.swift */,
 				A10EEB6027E9C98200E473FB /* Main.storyboard */,
 				A10EEB7027E9CDD100E473FB /* WordTVCell.swift */,
 				A10EEB6327E9C98500E473FB /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				A10EEB7127E9CDD100E473FB /* WordTVCell.swift in Sources */,
 				A10EEB5B27E9C98200E473FB /* AppDelegate.swift in Sources */,
 				A10EEB5D27E9C98200E473FB /* SceneDelegate.swift in Sources */,
+				A10EEB7327E9CF8700E473FB /* WordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
