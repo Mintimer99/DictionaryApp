@@ -20,15 +20,35 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="18e-zZ-shy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="18e-zZ-shy" customClass="WordTVCell" customModule="DictionaryApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="18e-zZ-shy" id="SIr-tg-Qjs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEw-c9-z3W">
+                                                    <rect key="frame" x="20" y="11.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BEw-c9-z3W" firstAttribute="centerY" secondItem="SIr-tg-Qjs" secondAttribute="centerY" id="D4c-Ik-UT1"/>
+                                                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="BEw-c9-z3W" secondAttribute="trailing" constant="352" id="wJb-pl-peA"/>
+                                                <constraint firstItem="BEw-c9-z3W" firstAttribute="leading" secondItem="SIr-tg-Qjs" secondAttribute="leadingMargin" id="wTv-hu-bBD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wordLabel" destination="BEw-c9-z3W" id="kId-GJ-OeL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lKt-GY-YnQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sJw-NC-OY0"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,9 +61,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Dictionary" id="6ki-uc-uUx">
-                        <barButtonItem key="leftBarButtonItem" title="Ru" id="z8b-3d-jkf"/>
+                        <barButtonItem key="leftBarButtonItem" title="Ru" id="z8b-3d-jkf">
+                            <connections>
+                                <action selector="switchLanguageButton:" destination="BYZ-38-t0r" id="fxL-NJ-93n"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FQc-W9-wcy"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dictionaryTableView" destination="xX3-ri-Hgb" id="rLa-pi-tQu"/>
+                        <outlet property="languageButton" destination="z8b-3d-jkf" id="JNC-TJ-pVi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
