@@ -10,12 +10,13 @@
 		A10EEB5B27E9C98200E473FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB5A27E9C98200E473FB /* AppDelegate.swift */; };
 		A10EEB5D27E9C98200E473FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB5C27E9C98200E473FB /* SceneDelegate.swift */; };
 		A10EEB5F27E9C98200E473FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB5E27E9C98200E473FB /* ViewController.swift */; };
-		A10EEB6227E9C98200E473FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6027E9C98200E473FB /* Main.storyboard */; };
 		A10EEB6427E9C98500E473FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6327E9C98500E473FB /* Assets.xcassets */; };
 		A10EEB6727E9C98500E473FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6527E9C98500E473FB /* LaunchScreen.storyboard */; };
 		A10EEB6F27E9C9B400E473FB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A10EEB6E27E9C9B400E473FB /* .gitignore */; };
 		A10EEB7127E9CDD100E473FB /* WordTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB7027E9CDD100E473FB /* WordTVCell.swift */; };
 		A10EEB7327E9CF8700E473FB /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB7227E9CF8700E473FB /* WordModel.swift */; };
+		A10EEB7527E9D6CE00E473FB /* WordInfoTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EEB7427E9D6CE00E473FB /* WordInfoTVController.swift */; };
+		A1A3528B27EA2A6500426571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A3528A27EA2A6500426571 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +24,14 @@
 		A10EEB5A27E9C98200E473FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A10EEB5C27E9C98200E473FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A10EEB5E27E9C98200E473FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A10EEB6127E9C98200E473FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A10EEB6327E9C98500E473FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10EEB6627E9C98500E473FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A10EEB6827E9C98500E473FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A10EEB6E27E9C9B400E473FB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A10EEB7027E9CDD100E473FB /* WordTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTVCell.swift; sourceTree = "<group>"; };
 		A10EEB7227E9CF8700E473FB /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		A10EEB7427E9D6CE00E473FB /* WordInfoTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordInfoTVController.swift; sourceTree = "<group>"; };
+		A1A3528A27EA2A6500426571 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				A10EEB5A27E9C98200E473FB /* AppDelegate.swift */,
 				A10EEB5C27E9C98200E473FB /* SceneDelegate.swift */,
 				A10EEB5E27E9C98200E473FB /* ViewController.swift */,
+				A1A3528A27EA2A6500426571 /* Main.storyboard */,
 				A10EEB7227E9CF8700E473FB /* WordModel.swift */,
-				A10EEB6027E9C98200E473FB /* Main.storyboard */,
+				A10EEB7427E9D6CE00E473FB /* WordInfoTVController.swift */,
 				A10EEB7027E9CDD100E473FB /* WordTVCell.swift */,
 				A10EEB6327E9C98500E473FB /* Assets.xcassets */,
 				A10EEB6527E9C98500E473FB /* LaunchScreen.storyboard */,
@@ -137,7 +140,7 @@
 				A10EEB6F27E9C9B400E473FB /* .gitignore in Resources */,
 				A10EEB6727E9C98500E473FB /* LaunchScreen.storyboard in Resources */,
 				A10EEB6427E9C98500E473FB /* Assets.xcassets in Resources */,
-				A10EEB6227E9C98200E473FB /* Main.storyboard in Resources */,
+				A1A3528B27EA2A6500426571 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,20 +156,13 @@
 				A10EEB5B27E9C98200E473FB /* AppDelegate.swift in Sources */,
 				A10EEB5D27E9C98200E473FB /* SceneDelegate.swift in Sources */,
 				A10EEB7327E9CF8700E473FB /* WordModel.swift in Sources */,
+				A10EEB7527E9D6CE00E473FB /* WordInfoTVController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A10EEB6027E9C98200E473FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A10EEB6127E9C98200E473FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A10EEB6527E9C98500E473FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

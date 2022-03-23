@@ -9,7 +9,6 @@ import UIKit
 
 class WordTVCell: UITableViewCell {
 
-    
     @IBOutlet weak var wordLabel: UILabel!
     
     override func awakeFromNib() {

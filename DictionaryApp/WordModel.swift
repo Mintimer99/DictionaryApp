@@ -11,7 +11,7 @@ struct Word {
     var word: String
     var translation: String
     var transcription: String
-    var example: String
+    var example: Array<String>
     
     var remembered: Bool = false
     var toBeRevised: Bool = false
